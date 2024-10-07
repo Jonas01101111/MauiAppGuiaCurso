@@ -1,12 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiAppGuiaCurso.MainPage">
+             x:Class="MauiAppGuiaCurso.MainPage"
+             Title="">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#3185B8" Offset="1.0"/>
+            <GradientStop Color="#00FFAA" Offset="0.0"/>
 
-    <ScrollView>
-        <VerticalStackLayout
-            
-        </VerticalStackLayout>
-    </ScrollView>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Transparent" />
+            <Setter Property="CornerRadius" Value="15"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontSize" Value="80" />
+            <Setter Property="BorderWidth" Value="1"/>
+            <Setter Property="BorderColor" Value="White"/>
+        </Style>
+    </ContentPage.Resources>
+    
+    
+    
+    <VerticalStackLayout VerticalOptions="Center">
+        <Button Text="Clique para continuar" x:Name="Start" Clicked="Start_Clicked"/>
+        
+        
+        
+        
+        
+    </VerticalStackLayout>
 
 </ContentPage>
